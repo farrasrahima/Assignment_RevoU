@@ -1,18 +1,24 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>codedamn HTML Playground</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--- Link to flexbox.css---->
-        <link rel="stylesheet" href="flexbox.css" />
-    </head>
-    <body>   
-        <div class="parent">
-        <div class="child1"></div>
-        <div class="child2"></div>
-        </div>
-        <script src="https://bit.ly/codedamn-web-console"></script>
-        <script src="/script.js"></script>
-    </body>
+<head>
+    <script>
+        function testVariable() {
+            var strText = document.getElementById("textone").value;          
+            var strText1 = document.getElementById("textTWO").value;
+            var result = strText + ' ' + strText1;
+            document.getElementById('spanResult').textContent = result;
+             
+        }
+    </script>
+</head>
+<body> 
+    <input type="text" id="textone" />
+    <input type="text" id="textTWO" />
+    <button  onclick="testVariable()">Submit</button> <br />
+    <span id="spanResult">
+
+    </span>
+   
+     
+</body>
 </html>
