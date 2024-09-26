@@ -6,16 +6,31 @@
     padding: 0;
 }
 @media only screen and (max-width: 767px)  {
-    .main_header{
-       flex-direction: column;
+    .main_header, .message_us_container, .education_container, .skill_container
+       {flex-direction: column;}
     }
 @media only screen and (max-width: 767px) {
     .nav_links li{
         flex-direction: column;
         margin-top: 20px;
     }
-
 }
+@media only screen and (max-width: 767px)  {
+   .porto_img {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .porto_img img {
+        margin: 15px 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .profile_container {
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+    }
 }
 html, body {
     width: 100%;
@@ -186,7 +201,6 @@ nav{
 }
 .profile_container {
     display: flex;
-    flex-direction: row-reverse;
     justify-content:flex-end;
     margin-top: 20px;
 }
@@ -300,7 +314,6 @@ nav{
     margin-top: 20px;
     width: 100%;
     height: auto;
-    margin-left: 50px;
     font-weight: 400;
 }
 .form_result table, th, td {
@@ -326,4 +339,12 @@ nav{
     font-family: "Poppins";
     font-weight: 400;
     font-size: 25px; 
+ }
+
+ #footer {
+    padding: 30px 10%;
+    font-family: "Poppins";
+    font-weight: 400;
+    background-color: rgba(201,217,239,255);
+    text-align: end;
  }
